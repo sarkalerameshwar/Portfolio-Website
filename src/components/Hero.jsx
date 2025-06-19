@@ -8,9 +8,9 @@ export default function Hero({ scrollToSection }) {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:john@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/sarkalerameshwar", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/rameshwar-sarkale-93a259299/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:rameshwarsarkale21@gmail.com", label: "Email" },
   ]
 
   return (
@@ -42,18 +42,18 @@ export default function Hero({ scrollToSection }) {
         ))}
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
+      <div className="container mx-auto px-4 text-center relative z-10">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-          <motion.h1
+          <motion.h2
             className="text-6xl md:text-8xl font-bold mb-6"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
             <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              John Doe
+              Rameshwar Sarkale
             </span>
-          </motion.h1>
+          </motion.h2>
 
           <motion.p
             className="text-xl md:text-2xl text-gray-300 mb-8"
@@ -61,7 +61,7 @@ export default function Hero({ scrollToSection }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            Full Stack Developer & UI/UX Designer
+            MERN Stack Developer & UI/UX Designer
           </motion.p>
 
           <motion.div

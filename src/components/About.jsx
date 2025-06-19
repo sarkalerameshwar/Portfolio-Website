@@ -50,7 +50,7 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience creating digital experiences that
+              I'm a passionate MERN-stack developer with overall good experience creating digital experiences that
               combine beautiful design with powerful functionality. I specialize in modern web technologies and love
               bringing ideas to life through code.
             </p>

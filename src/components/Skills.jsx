@@ -1,29 +1,29 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Server, Database, Smartphone } from "lucide-react"
+import { Code, Server, Database, Wrench } from "lucide-react"
 
 export default function Skills() {
   const skillCategories = [
     {
       icon: Code,
       title: "Frontend",
-      skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Next.js", "Vite"],
+      skills: ["React", "JavaScript", "Tailwind CSS", "BootStrap css", "Vite"],
     },
     {
       icon: Server,
       title: "Backend",
-      skills: ["Node.js", "Python", "Express", "FastAPI", "Django", "GraphQL"],
+      skills: ["Node.js", "Python", "Express", "FastAPI", "Django"],
     },
     {
       icon: Database,
       title: "Database",
-      skills: ["MongoDB", "PostgreSQL", "Redis", "Firebase", "MySQL", "Supabase"],
+      skills: ["MongoDB", "MySQL"],
     },
     {
-      icon: Smartphone,
-      title: "Mobile & Tools",
-      skills: ["React Native", "Flutter", "Git", "Docker", "AWS", "Vercel"],
+      icon: Wrench,
+      title: "Tools",
+      skills: [ "Git & GitHub","PostMan", "Vercel", "Render"],
     },
   ]
 

@@ -14,7 +14,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="flex items-center justify-center space-x-2 text-gray-400"
         >
-          <span>© 2024 John Doe. Made with</span>
+          <span>© 2025 Rameshwar Sarkale. Made with</span>
           <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}>
             <Heart className="w-4 h-4 text-red-500 fill-current" />
           </motion.div>

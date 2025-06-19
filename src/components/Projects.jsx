@@ -7,29 +7,29 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce platform built with React, Node.js, and MongoDB.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      title: "Real time Chat-Application",
+      description: "One-To-One chat features with React, Node.js, and MongoDB.",
+      technologies: ["React", "Node.js", "MongoDB", "Express.js"],
+      githubUrl: "https://github.com/sarkalerameshwar/Fullstack-Chat-Application",
+      liveUrl: "https://fullstack-chat-application-xldt.onrender.com",
       image: "/placeholder.svg?height=200&width=300",
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Hotel Listings Application",
       description: "A collaborative task management application with real-time updates.",
       technologies: ["Vue.js", "Express", "Socket.io", "PostgreSQL"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/sarkalerameshwar/Airbn-Listings",
+      liveUrl: "https://mern-project-8l62.onrender.com",
       image: "/placeholder.svg?height=200&width=300",
     },
     {
       id: 3,
       title: "Weather Dashboard",
       description: "A responsive weather dashboard with location-based forecasts.",
-      technologies: ["React", "OpenWeather API", "Chart.js"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      technologies: ["React", "OpenWeather API"],
+      githubUrl: "https://github.com/sarkalerameshwar/Weather-Application",
+      liveUrl: "https://project-weather-application.onrender.com",
       image: "/placeholder.svg?height=200&width=300",
     },
     {
@@ -120,7 +120,7 @@ export default function Projects() {
                     whileHover={{ scale: 1.05 }}
                   >
                     <ExternalLink className="w-4 h-4" />
-                    <span>Live</span>
+                    <a href="https://fullstack-chat-application-xldt.onrender.com"><span >Live</span></a>
                   </motion.a>
                 </div>
               </div>
