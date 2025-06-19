@@ -33,6 +33,7 @@ export default function Contact() {
     if (!formData.subject.trim()) errors.subject = "Subject is required";
     if (!formData.message.trim()) errors.message = "Message is required";
     return errors;
+    
   };
 
   const handleSubmit = async (e) => {
