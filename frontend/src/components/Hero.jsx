@@ -12,6 +12,7 @@ export default function Hero({ scrollToSection }) {
     { icon: Linkedin, href: "https://www.linkedin.com/in/rameshwar-sarkale-93a259299/", label: "LinkedIn" },
     { icon: Mail, href: "mailto:rameshwarsarkale21@gmail.com", label: "Email" },
   ]
+  
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">

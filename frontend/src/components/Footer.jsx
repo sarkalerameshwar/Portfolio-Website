@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Heart } from "lucide-react"
 
+
 export default function Footer() {
   return (
     <footer className="py-8 border-t border-gray-800">
