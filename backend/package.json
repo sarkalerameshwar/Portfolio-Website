@@ -5,13 +5,12 @@
   "license": "ISC",
   "author": "",
   "type": "module",
+  
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "build": "cd ../ && npm run build",
     "start": "node index.js"
-    
   },
   "dependencies": {
     "body-parser": "^2.2.0",

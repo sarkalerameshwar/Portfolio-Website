@@ -1,10 +1,12 @@
 import mongoose from "mongoose"
 
+// Schema for message
+
 const messageSchema = new mongoose.Schema({
+
     name :{
         type: String,
-        required: true
-
+        required: true,
     },
     email :{
         type : String,

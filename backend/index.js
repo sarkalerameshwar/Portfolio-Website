@@ -41,9 +41,9 @@ mongoose.connect(process.env.URL).then(()=>{
     console.log(err)
 })
 
-app.get("/", (req, res) =>{
-    res.send("Hello world");
-})
+// app.get("/", (req, res) =>{
+//     res.send("Hello world");
+// })
 app.post("/send-message",(req,res)=>{
     const {name,subject,email,message} = req.body;
     const newMessage = new data({
@@ -56,9 +56,10 @@ app.post("/send-message",(req,res)=>{
         res.status(200).json("message sent successfully")
     }).catch(error=>{
         console.log(error)
-        res.status(500).json("Internal server error")
+        res.status(500).json("Internal server error ")
     })
 })
+
 
 
 app.listen(PORT, ()=>{
