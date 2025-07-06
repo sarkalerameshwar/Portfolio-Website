@@ -47,7 +47,7 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:5000/send-message", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL || "https://portfolio-website-5pj6.onrender.com"}/send-message`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
