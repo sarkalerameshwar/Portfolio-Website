@@ -3,7 +3,7 @@
 import { Github, ExternalLink } from "lucide-react"
 import chatAppImage from "../assets/Chat app.png"
 import portfolioImage from "../assets/Portfolio.png"
-import weatherImage from "../assets/Weather app.png"
+import weatherImage from "../assets/Weather App.png"
 import foodAppImage from "../assets/Food app.png"
 
 export default function Projects() {
