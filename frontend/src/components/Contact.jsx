@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { Send, Mail } from "lucide-react";
+import { toast } from "react-toastify";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -33,7 +34,6 @@ export default function Contact() {
     if (!formData.subject.trim()) errors.subject = "Subject is required";
     if (!formData.message.trim()) errors.message = "Message is required";
     return errors;
-    
   };
 
   const handleSubmit = async (e) => {
@@ -47,18 +47,21 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL || "https://portfolio-website-5pj6.onrender.com"}/send-message`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL || "https://portfolio-website-5pj6.onrender.com"}/send-message`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) throw new Error("Failed to send message");
 
-      alert("Message sent successfully!");
+      toast.success("Message sent successfully!");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
-      alert("Error sending message: " + error.message);
+      toast.error("Error sending message: " + error.message);
     } finally {
       setIsSubmitting(false);
     }
@@ -86,6 +89,16 @@ export default function Contact() {
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Ready to bring your ideas to life? Let's collaborate and create something amazing together.
           </p>
+          <div className="mt-6 flex justify-center">
+            <a
+              href="mailto:rameshwarsarkale21@gmail.com"
+              className="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center space-x-2"
+              aria-label="Send email"
+            >
+              <Mail className="w-6 h-6" />
+              <span>rameshwarsarkale21@gmail.com</span>
+            </a>
+          </div>
         </motion.div>
 
         <motion.div

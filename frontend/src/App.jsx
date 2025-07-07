@@ -8,6 +8,8 @@ import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -57,6 +59,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
+      <ToastContainer />
     </div>
   )
 }

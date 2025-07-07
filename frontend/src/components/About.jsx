@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Code } from "lucide-react"
+import { toast } from "react-toastify"
 
 export default function About() {
   return (
@@ -62,7 +63,11 @@ export default function About() {
               className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >
+            onClick={() => {
+              toast.info("Currently no resume available for download.", {
+                position: "top-right",})
+            }
+            }>
               Download Resume
             </motion.button>
           </motion.div>
