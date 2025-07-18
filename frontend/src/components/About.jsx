@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code } from "lucide-react"
+import Photo from "../assets/Photo.jpg"
 import { toast } from "react-toastify"
 
 export default function About() {
@@ -22,27 +22,32 @@ export default function About() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Animated Photo with Ring */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="flex justify-center"
+            className="relative flex justify-center"
           >
-            <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-cyan-400/20 to-purple-500/20 rounded-full flex items-center justify-center">
-                <div className="w-64 h-64 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-full flex items-center justify-center">
-                  <Code className="w-32 h-32 text-white" />
-                </div>
-              </div>
-              <motion.div
-                className="absolute inset-0 border-2 border-cyan-400/30 rounded-full"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-              />
-            </div>
+            {/* Pulsating ring effect */}
+            <motion.div
+              animate={{ scale: [1, 1.1, 1], opacity: [1, 0.7, 1] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 2,
+              }}
+              className="absolute w-80 h-80 rounded-full border-4 border-cyan-500 opacity-50"
+            />
+            <img
+              src={Photo}
+              alt="About"
+              className="w-80 h-80 rounded-full object-cover z-10"
+            />
           </motion.div>
 
+          {/* About Text */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -63,11 +68,12 @@ export default function About() {
               className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              toast.info("Currently no resume available for download.", {
-                position: "top-right",})
-            }
-            }>
+              onClick={() => {
+                toast.info("Currently no resume available for download.", {
+                  position: "top-right",
+                })
+              }}
+            >
               Download Resume
             </motion.button>
           </motion.div>
