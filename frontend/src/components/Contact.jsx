@@ -84,11 +84,6 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          {/* <img
-            src={Photo}
-            alt="Contact"
-            className="mx-auto mb-8 rounded-lg max-w-full h-auto"
-          /> */}
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             Get In Touch
           </h2>

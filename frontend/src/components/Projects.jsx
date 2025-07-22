@@ -1,7 +1,7 @@
 "use client"
 
 import { Github, ExternalLink } from "lucide-react"
-import chatAppImage from "../assets/Chat app.png"
+import chatAppImage from "../assets/chat 2.png"
 import portfolioImage from "../assets/Portfolio.png"
 import weatherImage from "../assets/Weather App.png"
 import foodAppImage from "../assets/Food app.png"
@@ -32,7 +32,7 @@ export default function Projects() {
       description: "A full-featured food delivery application with user authentication and order management.",
       technologies: ["React.js", "mongoDB", "Node.js", "Express.js"],
       githubUrl: "https://github.com/sarkalerameshwar/Food-Delivery-Web-App",
-      liveUrl: "#",
+      liveUrl: "https://food-delivery-client-side.onrender.com",
       image: foodAppImage,
     },
     {
@@ -50,7 +50,7 @@ export default function Projects() {
       description: "A responsive portfolio website with modern animations.",
       technologies: ["React", "Framer Motion", "Tailwind CSS"],
       githubUrl: "https://github.com/sarkalerameshwar/Portfolio-Website",
-      liveUrl: "https://portfolio-website-5pj6.onrender.com/",
+      liveUrl: "https://portfolio-website-5pj6.onrender.com",
       image: portfolioImage,
     },
   ]
