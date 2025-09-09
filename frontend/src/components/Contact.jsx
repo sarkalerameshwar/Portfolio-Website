@@ -82,8 +82,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+          className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             Get In Touch
           </h2>
@@ -210,7 +209,7 @@ export default function Contact() {
                 <motion.p
                   className="text-red-500 text-sm mt-1"
                   initial={{ opacity: 0, y: -4 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }} 
                 >
                   {formErrors.message}
                 </motion.p>

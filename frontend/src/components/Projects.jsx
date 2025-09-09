@@ -5,6 +5,7 @@ import chatAppImage from "../assets/chat 2.png"
 import portfolioImage from "../assets/Portfolio.png"
 import weatherImage from "../assets/Weather App.png"
 import foodAppImage from "../assets/Food app.png"
+import quizAppImage from "../assets/Quiz.png"
 
 export default function Projects() {
   const projects = [
@@ -46,6 +47,15 @@ export default function Projects() {
     },
     {
       id: 5,
+      title: "Quiz Platform",
+      description: "A responsive portfolio website with modern animations.",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      githubUrl: "https://github.com/sarkalerameshwar/Quiz-Platform",
+      liveUrl: "https://quiz-platform-1-ooiy.onrender.com",
+      image: quizAppImage,
+    },
+    {
+      id: 6,
       title: "Portfolio Website",
       description: "A responsive portfolio website with modern animations.",
       technologies: ["React", "Framer Motion", "Tailwind CSS"],
