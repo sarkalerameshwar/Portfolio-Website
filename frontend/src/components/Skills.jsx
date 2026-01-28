@@ -13,7 +13,7 @@ export default function Skills() {
     {
       icon: Server,
       title: "Backend",
-      skills: ["Node.js", "Python", "Express", "FastAPI", "Django"],
+      skills: ["Node.js", "Python", "Express"],
     },
     {
       icon: Database,

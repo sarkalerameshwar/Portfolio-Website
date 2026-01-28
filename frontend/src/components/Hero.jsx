@@ -62,7 +62,7 @@ export default function Hero({ scrollToSection }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            MERN Stack Developer & UI/UX Designer
+            MERN Stack Developer 
           </motion.p>
 
           <motion.div
