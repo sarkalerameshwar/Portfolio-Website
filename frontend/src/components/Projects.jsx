@@ -54,15 +54,15 @@ export default function Projects() {
       liveUrl: "https://quiz-platform-1-ooiy.onrender.com",
       image: quizAppImage,
     },
-    {
-      id: 6,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website with modern animations.",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      githubUrl: "https://github.com/sarkalerameshwar/Portfolio-Website",
-      liveUrl: "https://portfolio-website-5pj6.onrender.com",
-      image: portfolioImage,
-    },
+    // {
+    //   id: 6,
+    //   title: "Portfolio Website",
+    //   description: "A responsive portfolio website with modern animations.",
+    //   technologies: ["React", "Framer Motion", "Tailwind CSS"],
+    //   githubUrl: "https://github.com/sarkalerameshwar/Portfolio-Website",
+    //   liveUrl: "https://portfolio-website-5pj6.onrender.com",
+    //   image: portfolioImage,
+    // },
   ]
 
   return (
